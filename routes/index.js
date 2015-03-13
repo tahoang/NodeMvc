@@ -1,7 +1,7 @@
 ﻿var fs = require('fs');
 var path = require('path');
-require('rootpath')();
-var controllerDir = require('appSettings').controllerPath;
+var appPath = require('app-root-path');
+var controllerDir = appPath + '/controllers';
 
 
 var registerRoutes = function(app, defaultRoute, mountPath) {
