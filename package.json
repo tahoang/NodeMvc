@@ -1,10 +1,28 @@
 {
-  "name": "NodeMvc",
+  "name": "easynodemvc",
   "version": "0.1.1",
   "main": "./index.js",
   "dependencies": {
     "express": "~4.8.6",
     "rootpath": "^0.1.2",
     "tedious": "^1.5.1"
-  }
+  },
+  "description": "Node MVC\r ========",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:tahoang/NodeMvc.git"
+  },
+  "keywords": [
+    "nodeMVC"
+  ],
+  "author": "tahoang",
+  "license": "GLP",
+  "bugs": {
+    "url": "https://github.com/tahoang/NodeMvc/issues"
+  },
+  "homepage": "https://github.com/tahoang/NodeMvc"
 }
