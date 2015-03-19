@@ -1,5 +1,5 @@
 {
-  "name": "easynodemvc",
+  "name": "easynodemvc", 
   "version": "0.1.3",
   "main": "./index.js",
   "dependencies": {
