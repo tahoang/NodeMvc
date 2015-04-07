@@ -100,7 +100,7 @@ var SqlRepository = Class.define({
       }
       else {//no error 
         //var rows = rowCount || rows.length;
-        console.log('Sql statement/name: "'+ sql+'" was executed successfully!');
+        console.log('Sql statement/ procedure was executed successfully!');
 
         //run done callback if exists
         if (typeof scope.onSqlExecuted == 'function')
