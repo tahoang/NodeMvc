@@ -95,7 +95,7 @@ var baseController = Class.define({
   del: {},
   mapRoutes: function() {
     var router = this.router;
-    //add middlewares
+    //add middlewares (controller level)
     for (var i in this.middlewares) {
       var mw = this.middlewares[i];
       parseMiddleware(mw, this);
