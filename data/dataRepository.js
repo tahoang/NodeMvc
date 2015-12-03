@@ -1,11 +1,9 @@
 ﻿/*
 Author: Tu Hoang
 ESRGC 2014
-OKDashboard
 
 DataRepository.js
 
-Data repository for OKDashboard
 Data provider for controllers
 */
 var fs = require('fs');
@@ -15,7 +13,6 @@ var Connection = require('tedious').Connection;
 var Request = require('tedious').Request;
 var TYPES = require('tedious').TYPES;
 var appPath = require('app-root-path');
-var dbConfig = require(appPath + '/dbconfig').dbConfig;
 
 var DataRepository = Class.define({
   extend: SqlRepository,
@@ -31,7 +28,7 @@ var DataRepository = Class.define({
       //  var c = fs.readFileSync(configFile.toString(), 'utf8');
       //  console.log(c);
       //  this.config = JSON.parse(c).dbConfig;
-      this.config = dbConfig;
+      this.config = require(appPath + '/dbconfig').dbConfig;;
       //console.log(this.config);
     }
 
