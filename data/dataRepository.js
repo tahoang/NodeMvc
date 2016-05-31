@@ -41,12 +41,12 @@ var DataRepository = Class.define({
   //config that is specified here will be ignored if it's passed 
   //in to the constructor when creating an instance of this class.
   //config: {
-  //  "server": "esrgc1",
-  //  "userName": "gisApp",
-  //  "password": "ESRGCGISAdmin1",
+  //  "server": "server name",
+  //  "userName": "login id",
+  //  "password": "password",
   //  "options": {
-  //    database: "OKDashboard",
-  //    port: 37742
+  //    database: "database name",
+  //    port: port number
   //  }
   //},
   onSqlExecuted: function(err, rowCount, rows) {
