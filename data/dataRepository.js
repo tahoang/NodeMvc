@@ -72,47 +72,47 @@ var DataRepository = Class.define({
 * {name: colName, value: value}
 */
 function rowsToObject(rows) {
-  var result = []
+  var result = [];
   rows.forEach(function(row) {
     row.forEach(function(column) {
-      var value = column.value
+      var value = column.value;
       if (typeof value === 'number') {
-        value = value + ''
+        value = value + '';
       }
       if (typeof value === 'string') {
-        value = value.trim()
+        value = value.trim();
       }
       //value = value.trim()
       var obj = {
         label: column.metadata.colName,
         value: value
       }
-      result.push(obj)
+      result.push(obj);
     })
   })
-  return result
+  return result;
 }
 
 /*
 * {colName: value}
 */
 function rowsToObjectLiteral(rows) {
-  var result = []
+  var result = [];
   rows.forEach(function(row) {
-    var newrow = {}
+    var newrow = {};
     row.forEach(function(column) {
-      var value = column.value
+      var value = column.value;
       if (typeof value === 'number') {
-        value = value + ''
+        value = value + '';
       }
       if (typeof value === 'string') {
-        value = value.trim()
+        value = value.trim();
       }
-      newrow[column.metadata.colName] = value
+      newrow[column.metadata.colName] = value;
     })
-    result.push(newrow)
+    result.push(newrow);
   })
-  return result
+  return result;
 }
 
 
